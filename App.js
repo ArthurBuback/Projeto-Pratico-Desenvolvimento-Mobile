@@ -18,7 +18,6 @@ export default function App() {
       })
   }, []);
 
-
   return (
     <View style={styles.container}>
       {filmes.length > 0 ? filmes.map(filme => 
@@ -31,10 +30,8 @@ export default function App() {
             <Button style={styles.botao} title='Comprar Ingresso' />
           </View>
         </View>) : <Text style={styles.carregando}>Carregando....</Text>}
-      
       <StatusBar style="auto" />
     </View>
-    
   );
 }
 
@@ -54,7 +51,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'gray',
     borderColor: 'black',
     borderWidth: 2,
-    borderRadius: 10,
+    borderRadius: 10
   },
   imgFilme: {
     width: '30%',
